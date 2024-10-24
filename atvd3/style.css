@@ -1,0 +1,148 @@
+  /* Estilo geral */
+
+  body {
+    font-family: 'Arial', sans-serif; /*fonte*/
+    background-color: #fff8e1; /* cor de fundo */
+    color: #333;
+  }
+
+  /* Estilo do Cabeçalho */
+header {
+    display: flex; /* Faz com que os elementos internos (logo e textos) fiquem em linha */
+    align-items: center; /* Alinha verticalmente os itens ao centro */
+    justify-content: center; /* <Centraliza horizontalmente os itens */
+    background-color: #d32f2f; /* Cor de fundo da tarja (vermelho) */
+    color: white; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno de 20px ao redor do conteúdo */
+    border-radius: 8px; /* Arredonda os cantos da tarja */
+}
+
+
+.logo {
+    height: 150px; /* Altura da imagem (logo) */
+}
+
+.header-info {
+    text-align: center; /* centraliza os textos do cabeçalho*/
+  }
+  
+  /* texto de cabechalho - nome da lanchonete(h1) e informações adicionais(p) */
+
+  header h1 { /* estilo do título*/
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  header p {
+    margin: 10px 0;
+  }
+  
+  header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  header a:hover { 
+    text-decoration: underline;
+  }
+  
+  /* Configurações do menu de Navegação  OK */
+  nav {
+    background-color: #ffeb3b; /* cor de fundo*/
+    padding: 15px; /* espessura da tarja de menu*/
+  }
+  
+  nav ul {
+    list-style-type: none; /* Remove os marcadores padrão da lista - tira os pontinhso da frente textos */
+    margin: 0; /* espaçamento ao redor da lista do menu. */
+    padding: 0; /* tira o preenchimento padrão ao redor da lista. */
+    display: flex; /* Utiliza o layout flexível para alinhar os itens em linha. */
+    justify-content: center; /* Centraliza os itens da lista horizontalmente. */
+}
+
+  
+  nav ul li {
+    margin: 0 20px; /* espaço entre os itens do meu*/
+  }
+  
+  nav ul li a {
+    color: #d32f2f;
+    text-decoration: none; /* remove o sublinhado dos links quando as opçoes nõ estiverem sellecionadas*/
+    font-size: 1.2rem; /* tamanho da fonte dos itens do menu*/
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline; /*sublinhado dos links quando as opçoes nõ estiverem sellecionadas*/
+  }
+  
+  /* Estilo das Seções */
+  section {
+    margin: 30px auto; /* Adiciona 30 pixels de margem em cima e embaixo e centraliza a seção horizontalmente. */
+    max-width: 800px; /* Define a largura máxima da seção como 800 pixels. */
+}
+
+
+form {
+    background-color: #ffe082; /* Define a cor de fundo do formulário como amarelo claro. */
+    padding: 20px; /* Adiciona 20 pixels de espaçamento interno ao redor do conteúdo do formulário. */
+    border-radius: 8px; /* Arredonda os cantos do formulário. */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve ao formulário. */
+}
+  
+label {
+    display: block; /* Faz com que os rótulos ocupem toda a largura disponível. */
+    margin-bottom: 8px; /* Adiciona uma margem de 8 pixels abaixo de cada rótulo. */
+    font-weight: bold; /* Define a fonte dos rótulos como negrito. */
+}
+
+input, select {
+    width: 100%; /* Define a largura dos campos de entrada e seletores para ocupar 100% do contêiner pai. */
+    padding: 10px; /* Adiciona 10 pixels de espaçamento interno aos campos. */
+    margin-bottom: 15px; /* Adiciona uma margem de 15 pixels abaixo de cada campo. */
+    border: 1px solid #ddd; /* Define uma borda cinza clara ao redor dos campos. */
+    border-radius: 4px; /* Arredonda os cantos dos campos. */
+}
+ 
+/* Estilo de botões: */
+
+button {
+    background-color: #d32f2f; /* Define a cor de fundo do botão como vermelho. */
+    color: white; /* Define a cor do texto do botão como branca. */
+    padding: 10px 20px; /* Adiciona 10 pixels de espaçamento interno em cima/embaixo e 20 pixels nas laterais. */
+    border: none; /* Remove a borda padrão do botão. */
+    border-radius: 4px; /* Arredonda os cantos do botão. */
+    cursor: pointer; /* Altera o cursor para uma mão ao passar sobre o botão. */
+}
+
+button:hover {
+    background-color: #c62828; /* Muda a cor de fundo do botão quando o mouse passa por cima. */
+}
+  
+  
+  /* Estilo da Tabela de Pedidos */
+
+  table {
+    width: 100%; /* deixa alargura da tabela para que fique da mesma largura das seções anteriores. */
+    border-collapse: collapsseparate; /* separa as colunas das tabelas*/
+    margin: 20px 0; /* separação entre títulos das tabelas e as margens da tabela */
+    font-size: 1rem; /*tamanho da fonte */
+}
+
+table, th, td {
+    border: 1px solid #ddd; /*borda cinza clara para a tabela*/
+}
+
+th, td {
+    padding: 15px; /*espaçamento interno entre células. */
+    text-align: left; /* Alinha o texto à esquerda nas células. */
+}
+
+th {
+    background-color: #d32f2f; /*cor de fundo do cabeçalho da tabela como vermelho. */
+    color: white; /* Define a cor do texto do cabeçalho como branca. */
+}
+
+td {
+    background-color: #fff3e0; /* Define a cor de fundo das células da tabela como um tom claro. */
+}

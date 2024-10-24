@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lanchonete Sabor & Cia</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="imagens/logo.ico.png" type="image/ico">
+</head>
+<body>
+
+  <!-- Logo e Cabeçalho -->
+  <header>
+    <img src="imagens/logo.ico.png" alt="Logo da Lanchonete" class="logo">
+    <div class="header-info">
+      <h1>Lanchonete Saborela</h1>
+      <p>Endereço: Rua Major Armando de Souza Melo, 204 - Piedade,PE</p>
+      <p>Telefone: (11) 98765-4321 | Email: contato@lanchonete_saborela.com.br</p>
+    </div>
+  </header>
+
+  <!-- Menu de Navegação -->
+  <nav>
+    <ul>
+      <li><a href="#cadastro-funcionario">Cadastro de Funcionário</a></li>
+      <li><a href="#cadastro-pedido">Cadastro de Pedido</a></li>
+      <li><a href="#lista-pedidos">Lista de Pedidos</a></li>
+    </ul>
+  </nav>
+
+  <!-- Formulário de Cadastro de Funcionário -->
+  <section id="cadastro-funcionario">
+    <h2>Cadastro de Funcionário</h2>
+    <form id="form-funcionario">
+      <label for="nomeFuncionario">Nome:</label>
+      <input type="text" id="nomeFuncionario" placeholder="Digite o nome do funcionário" required>
+      <label for="cpfFuncionario">CPF:</label>
+      <input type="text" id="cpfFuncionario" placeholder="Digite o CPF" required>
+      <button type="submit">Cadastrar Funcionário</button>
+    </form>
+  </section>
+
+  <!-- Formulário de Cadastro de Pedidos -->
+  <section id="cadastro-pedido">
+    <h2>Cadastro de Pedido</h2>
+    <form id="form-pedido">
+      <label for="nomePedido">Nome do Pedido:</label>
+      <input type="text" id="nomePedido" placeholder="Digite o nome do pedido" required>
+      <label for="descricaoPedido">Descrição:</label>
+      <input type="text" id="descricaoPedido" placeholder="Detalhes ou personalizações do pedido">
+      
+      <label for="responsavelPedido">Responsável:</label>
+      <select id="responsavelPedido" required>
+        <option value="">Selecione um Funcionário</option>
+      </select>
+      
+      <label for="statusPedido">Status:</label>
+      <select id="statusPedido" required>
+        <option value="A Fazer">A Fazer</option>
+        <option value="Fazendo">Fazendo</option>
+        <option value="Pronto para entrega">Pronto para entrega</option>
+      </select>
+      
+      <button type="submit">Cadastrar Pedido</button>
+    </form>
+  </section>
+
+  <!-- Nova Seção: Lista de Pedidos Cadastrados -->
+  <section id="lista-pedidos">
+    <h2>Lista de Pedidos Cadastrados</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nome do Pedido</th>
+          <th>Responsável</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="tabela-pedidos">
+        <!-- Os pedidos cadastrados serão inseridos aqui -->
+      </tbody>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
